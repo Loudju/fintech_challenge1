@@ -19,7 +19,7 @@ loan_costs = [500, 600, 200, 1000, 450]
 # @TODO: Use the `len` function to calculate the total number of loans in the list.
 # Print the number of loans from the list
 number_of_loans = len(loan_costs)
-print(number_of_loans)
+print(f"The total number of loans are {number_of_loans}")
 
 
 # What is the total of all loans?
@@ -27,14 +27,14 @@ print(number_of_loans)
 # Print the total value of the loans
 
 total_loan_amounts = sum(loan_costs)
-print(total_loan_amounts)
+print(f"All loans added together total ${total_loan_amounts}")
 
 # What is the average loan amount from the list?
 # @TODO: Using the sum of all loans and the total number of loans, calculate the average loan price.
 # Print the average loan amount
 
 average_loan_amount = (total_loan_amounts / number_of_loans)
-print(average_loan_amount)
+print(f"The average loan amount is ${average_loan_amount}")
 
 """Part 2: Analyze Loan Data.
 
@@ -70,8 +70,12 @@ loan = {
 # @TODO: Use get() on the dictionary of additional information to extract the Future Value and Remaining Months on the loan.
 # Print each variable.
 # YOUR CODE HERE!
+print(loan.get("future_value"))
+print()
 
 
+print(loan.get("remaining_months"))
+print()
 # @TODO: Use the formula for Present Value to calculate a "fair value" of the loan.
 # Use a minimum required return of 20% as the discount rate.
 #   You'll want to use the **monthly** version of the present value formula.
